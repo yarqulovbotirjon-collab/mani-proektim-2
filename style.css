@@ -1,0 +1,512 @@
+/* Umumiy sozlamalar */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Poppins', sans-serif;
+  color: #111;
+  background-color: #fff;
+}
+
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+
+/* HEADER STILI */
+.header {
+  padding: 20px 0;
+}
+
+.nav-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.logo {
+  font-size: 24px;
+  font-weight: 700;
+  color: #111;
+  text-decoration: none;
+}
+
+.nav-menu {
+  display: flex;
+  gap: 30px;
+}
+
+.nav-menu a {
+  text-decoration: none;
+  color: #555;
+  font-weight: 500;
+  transition: color 0.3s;
+}
+
+.nav-menu a:hover {
+  color: #111;
+}
+
+.nav-actions {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+
+.cart-icon {
+  font-size: 20px;
+  text-decoration: none;
+}
+
+.signup-btn {
+  padding: 8px 18px;
+  background-color: #111;
+  color: #fff;
+  border-radius: 6px;
+  text-decoration: none;
+  font-weight: 500;
+  transition: background 0.3s;
+}
+
+.signup-btn:hover {
+  background-color: #333;
+}
+
+/* HERO SECTION STILI */
+.hero-section {
+  padding: 40px 0 80px 0;
+  background-color: #eaf3f5; /* Figma'dagi och moviy/yashil fon rangi */
+  border-bottom-left-radius: 40px;
+  border-bottom-right-radius: 40px;
+}
+
+.hero-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 40px;
+  flex-wrap: wrap;
+}
+
+.hero-content {
+  flex: 1;
+  min-width: 300px;
+}
+
+.hero-content h1 {
+  font-size: 56px;
+  font-weight: 700;
+  line-height: 1.1;
+  margin-bottom: 30px;
+  color: #111;
+}
+
+.hero-stats {
+  display: flex;
+  align-items: center;
+  gap: 30px;
+  margin-bottom: 30px;
+}
+
+.hero-stats h3 {
+  font-size: 28px;
+  font-weight: 700;
+  color: #111;
+}
+
+.hero-stats p {
+  font-size: 14px;
+  color: #666;
+}
+
+.divider {
+  width: 1px;
+  height: 40px;
+  background-color: #ccc;
+}
+
+.search-box {
+  display: flex;
+  background-color: #fff;
+  border-radius: 50px;
+  padding: 8px 8px 8px 20px;
+  max-width: 450px;
+  box-shadow: 0 4px 15px rgba(0,0,0,0.05);
+}
+
+.search-box input {
+  flex: 1;
+  border: none;
+  outline: none;
+  font-size: 16px;
+  font-family: 'Poppins', sans-serif;
+}
+
+.search-btn {
+  background-color: #e2f1f5;
+  border: none;
+  width: 45px;
+  height: 45px;
+  border-radius: 50%;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.hero-image {
+  flex: 1;
+  min-width: 300px;
+  text-align: center;
+}
+
+.hero-image img {
+  max-width: 100%;
+  height: auto;
+  border-radius: 20px;
+}
+
+/* BEST SELLING SECTION STILI */
+.best-selling-section {
+  padding: 80px 0;
+}
+
+.best-container {
+  display: flex;
+  align-items: center;
+  gap: 40px;
+  flex-wrap: wrap;
+}
+
+.section-header {
+  flex: 1;
+  min-width: 250px;
+}
+
+.section-header h2 {
+  font-size: 42px;
+  font-weight: 700;
+  color: #111;
+  line-height: 1.2;
+  margin-bottom: 15px;
+}
+
+.section-header p {
+  font-size: 16px;
+  color: #666;
+  margin-bottom: 25px;
+  max-width: 300px;
+}
+
+.see-more-btn {
+  display: inline-block;
+  padding: 12px 24px;
+  background-color: #e2f1f5;
+  color: #111;
+  text-decoration: none;
+  font-weight: 500;
+  border-radius: 6px;
+  transition: background 0.3s ease;
+}
+
+.see-more-btn:hover {
+  background-color: #d1e8ee;
+}
+
+.products-grid {
+  flex: 3;
+  display: flex;
+  gap: 20px;
+  overflow-x: auto;
+}
+
+.product-card {
+  flex: 1;
+  min-width: 220px;
+}
+
+.image-box {
+  width: 100%;
+  height: 320px;
+  background-color: #f4f4f4;
+  border-radius: 12px;
+  overflow: hidden;
+  margin-bottom: 12px;
+}
+
+.image-box img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.product-title {
+  font-size: 18px;
+  font-weight: 600;
+  color: #222;
+  margin-bottom: 6px;
+}
+
+.product-price {
+  font-size: 16px;
+  color: #555;
+  font-weight: 500;
+}
+/* ABOUT US SECTION STILI */
+.about-us-section {
+  padding: 80px 20px;
+  background-color: #fff;
+  text-align: center;
+}
+
+.about-header {
+  margin-bottom: 50px;
+}
+
+.about-header h2 {
+  font-size: 38px;
+  font-weight: 700;
+  color: #111;
+  margin-bottom: 10px;
+}
+
+.about-header p {
+  font-size: 16px;
+  color: #666;
+}
+
+.about-grid {
+  display: flex;
+  justify-content: space-between;
+  gap: 30px;
+  flex-wrap: wrap;
+}
+
+.about-card {
+  flex: 1;
+  min-width: 280px;
+  padding: 30px 20px;
+  background-color: #fafafa;
+  border-radius: 16px;
+  transition: transform 0.3s ease;
+}
+
+.about-card:hover {
+  transform: translateY(-5px);
+}
+
+
+.about-icon {
+  width: 60px;
+  height: 60px;
+  background-color: #e2f1f5;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 24px;
+  margin: 0 auto 20px auto;
+
+}
+/* About us kartochkalari umumiy konteyneri uchun */
+.about-container {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 30px;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 40px 20px;
+}
+
+.about-card {
+  background: #ffffff;
+  border: 1px solid #eaeaea;
+  padding: 40px 30px;
+  border-radius: 16px;
+  text-align: center;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.03);
+}
+
+.about-card .icon {
+  font-size: 40px;
+  margin-bottom: 20px;
+}
+
+.about-card h3 {
+  font-size: 20px;
+  font-weight: bold;
+  margin-bottom: 15px;
+  color: #222;
+}
+
+.about-card p {
+  font-size: 15px;
+  color: #666;
+  line-height: 1.6;
+}
+.customers-section {
+  padding: 60px 20px;
+  background-color: #fff;
+}
+
+.customers-wrapper {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.customers-wrapper h2 {
+  text-align: center;
+  margin-bottom: 40px;
+  font-size: 28px;
+  font-weight: bold;
+}
+
+.customers-container {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr); /* Yonma-yon 2 ta ustun */
+  gap: 30px;
+}
+
+.customer-card {
+  background: #fdfdfd;
+  border: 1px solid #eaeaea;
+  padding: 30px;
+  border-radius: 12px;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.05);
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.customer-card img {
+  width: 70px;
+  height: 70px;
+  border-radius: 50%;
+  object-fit: cover;
+  margin-bottom: 15px;
+}
+
+.review-text {
+  font-size: 16px;
+  color: #555;
+  margin-bottom: 20px;
+  line-height: 1.6;
+}
+
+.customer-info h3 {
+  margin: 0;
+  font-size: 18px;
+  color: #222;
+}
+
+.customer-info span {
+  font-size: 14px;
+  color: #888;
+  display: block;
+  margin-bottom: 8px;
+}
+
+.rating {
+  font-size: 14px;
+  font-weight: bold;
+  color: #f39c12;
+}
+
+/* Telefon ekranlari uchun (mobil versiya) */
+@media (max-width: 768px) {
+  .customers-container {
+    grid-template-columns: 1fr; /* Birma-bir pastga qarab tushadi */
+  }
+}
+
+.about-card h3 {
+  font-size: 20px;
+  font-weight: 600;
+  color: #111;
+  margin-bottom: 12px;
+}
+
+.about-card p {
+  font-size: 14px;
+  color: #666;
+  line-height: 1.5;
+}
+.site-footer {
+  background-color: #f7f7f7; /* Sahifangizga mos fon rangi */
+  padding: 60px 20px 20px;
+  margin-top: 80px;
+  color: #333;
+}
+
+.footer-container {
+  max-width: 1200px;
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: 2fr 1fr 1fr 1fr;
+  gap: 40px;
+  align-items: start;
+}
+
+.footer-col h2, 
+.footer-col h3 {
+  margin-bottom: 20px;
+  font-size: 18px;
+  font-weight: bold;
+}
+
+.footer-col p {
+  color: #666;
+  margin-bottom: 20px;
+}
+
+.footer-col ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.footer-col ul li {
+  margin-bottom: 12px;
+}
+
+.footer-col ul li a {
+  text-decoration: none;
+  color: #666;
+  transition: color 0.3s ease;
+}
+
+.footer-col ul li a:hover {
+  color: #000;
+}
+
+.social-icons {
+  display: flex;
+  gap: 15px;
+}
+
+.social-icons a {
+  font-size: 20px;
+  text-decoration: none;
+}
+
+.footer-bottom {
+  max-width: 1200px;
+  margin: 40px auto 0;
+  padding-top: 20px;
+  border-top: 1px solid #e1e1e1;
+  text-align: center;
+  color: #777;
+  font-size: 14px;
+}
+
+/* Mobil qurilmalar uchun moslashuvchanlik */
+@media (max-width: 768px) {
+  .footer-container {
+    grid-template-columns: 1fr;
+    gap: 30px;
+  }
+}
